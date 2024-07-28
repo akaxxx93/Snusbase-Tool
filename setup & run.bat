@@ -4,4 +4,4 @@ title Snusbase by AKA
 
 cd Core
 
-py snusbase.py
+py main.py
