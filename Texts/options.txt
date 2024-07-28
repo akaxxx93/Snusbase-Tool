@@ -1,0 +1,6 @@
+    (1) - Rechercher avec un Email.             /  (5) - Rechercher via un mot de passe.
+    (2) - Rechercher avec un Nom d'utilisateur. /  (6) - Rechercher avec un mot de passe hashé.
+    (3) - Rechercher via une Adresse IP.        /  (7) - Rechercher avec Combo.
+    (4) - Geo une Adresse IP.                   /  (8) - Rechercher avec Nom & Prénom.
+
+    (exit/quitter) Pour quitter le programme.
