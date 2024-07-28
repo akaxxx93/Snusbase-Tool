@@ -1,10 +1,4 @@
-traceback
-datetime
 requests
 psutil
-fade
 colorama
-Fore
 Style
-urlopen
-urllib.request
